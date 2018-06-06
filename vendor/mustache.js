@@ -1,55 +1,3 @@
-
-Skip to content
-
-    Pull requests
-    Issues
-    Marketplace
-    Explore
-
-    @widmo34
-
-429
-12,094
-
-    2,196
-
-janl/mustache.js
-Code
-Issues 45
-Pull requests 38
-Projects 0
-Wiki
-Insights
-mustache.js/mustache.js
-2465398 on 11 Jun 2017
-@raymond-lam raymond-lam Writer.prototype.parse to cache by tags in addition to template string
-@mjackson
-@janl
-@bcherry
-@dasilvacontin
-@phillipj
-@langalex
-@brandonpayton
-@tisba
-@davisp
-@johnnypez
-@jhs
-@busticated
-@glytch
-@cweider
-@agibralter
-@yousefcisco
-@woledzki
-@utvara
-@vackraord
-@tmcw
-@simast
-@thegrandpoobah
-@raymond-lam
-@nagaozen
-@mrdon
-@mikesherov
-631 lines (524 sloc) 19 KB
 /*!
  * mustache.js - Logic-less {{mustache}} templates with JavaScript
  * http://github.com/janl/mustache.js
@@ -680,19 +628,3 @@ mustache.js/mustache.js
 
   return mustache;
 }));
-
-    © 2018 GitHub, Inc.
-    Terms
-    Privacy
-    Security
-    Status
-    Help
-
-    Contact GitHub
-    API
-    Training
-    Shop
-    Blog
-    About
-
-Press h to open a hovercard with more details.
