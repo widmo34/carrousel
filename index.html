@@ -22,7 +22,7 @@
             
             <script id="template-product-item" type="x-tmpl-mustache">
                 
-                <div class="carousel-cell first" id="{{id}}" style="background-image: url({{image}})">
+                <div class="{{cell}}" id="{{id}}" style="background-image: url({{image}})">
                     <div class="containner">
                         <h1>{{title}}</h1>
                         <p>{{description}}</p>
@@ -55,6 +55,7 @@
     
         var cities = [
             {
+                cell: 'carousel-cell first',
                 id: 'carousel-cell1',
                 image: '/images/1.jpeg',
                 title: 'Paris',
@@ -62,6 +63,7 @@
                 tags: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             },
             {
+                cell: 'carousel-cell',
                 id: 'carousel-cell2',
                 image: '/images/2.jpeg',
                 title: 'New-York',
@@ -69,6 +71,7 @@
                 tags: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             },
             {
+                cell: 'carousel-cell',
                 id: 'carousel-cell3',
                 image: '/images/3.jpeg',
                 title: 'London',
@@ -76,6 +79,7 @@
                 tags: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             },
             {
+                cell: 'carousel-cell',
                 id: 'carousel-cell4',
                 image: '/images/4.jpeg',
                 title: 'Tokyo',
@@ -83,6 +87,7 @@
                 tags: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             },
             {
+                cell: 'carousel-cell',
                 id: 'carousel-cell5',
                 image: '/images/5.jpeg',
                 title: 'Moscow',
@@ -102,9 +107,10 @@
     
     <script src="vendor/mustache.js"></script>
     <script src="vendor/flickity.pkgd.min.js"></script>
+    <script src="vendor/hash.js"></script>
     <script src="js/script.js"></script>
    
-    <script src="vendor/hash.js"></script>
+   
    
 
 </body>

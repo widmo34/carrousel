@@ -8,7 +8,7 @@ var output = document.querySelector('.main-carousel');
 var listItems = '';
 
 for(var i = 0; i < cities.length; i++){
- // console.log(cities);
+  console.log(cities);
   listItems += Mustache.render(templateItem, cities[i]);
 }
 
@@ -32,10 +32,9 @@ var button = document.querySelector('.btn');
 
 
 
-button.addEventListener('click', function(event){
+button.addEventListener('click', function(){
       f.select(0);
-  // console.log(firstSlide);
-})
+ })
 
 
 
