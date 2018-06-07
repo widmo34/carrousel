@@ -19,6 +19,7 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  text-align: center;
 }
 
 .wrapper h1 {
@@ -81,9 +82,17 @@ body {
 }
 
 #map {
-  width: 400px;
-  height: 600px;
+  width: 800px;
+  height: 400px;
   margin: 0 auto;
+}
+
+#infos {
+  width: 200px;
+  height: 50px;
+  border: 1px solid black;
+  margin: 10px auto;
+  border-radius: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */

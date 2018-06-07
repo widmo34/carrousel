@@ -49,36 +49,86 @@ f.on( 'scroll', function( progress ) {
 
 
 
-/* FUNCTION GOOGLE MAPS IS BELOW 
+/* FUNCTION GOOGLE MAPS IS BELOW */
+  
+
 
 window.initMap = function() {
-  // The location of Uluru
+
+  // MARKING NO A MAP 
+var infos = document.getElementById('infos');
+  // The location of Uluru and two other places
   var uluru = {lat: -25.344, lng: 131.036};
   var coords2 = {lat: -25.363, lng: 134.044};
-	var coords3 = {lat: -25.363, lng: 137.044};
+  var coords3 = {lat: -25.363, lng: 137.044};
+  var sydney = {lat: -33.874237, lng: 151.198517};
   // The map, centered at Uluru
   var map = new google.maps.Map(
   document.getElementById('map'), {zoom: 4, center: uluru});
   // The marker, positioned at Uluru
-  // var marker = new google.maps.Marker({position: uluru, map: map});
-  
-  var markerOne = new google.maps.Marker({
+   var markerOne = new google.maps.Marker({
     position: uluru,
     map: map
   });
+ // The marker, poistioned near uluru 
+  var markerTwo = new google.maps.Marker({
+    position: coords2,
+    map: map
+  });
+ // The marker, poistioned near uluru 
+  var markerThree = new google.maps.Marker({
+    position: coords3,
+    map: map
+  });
+
+   // The marker, poistioned at Sydney 
+   var markerThree = new google.maps.Marker({
+    position: sydney,
+    map: map
+  });
+
+
+
+
+
+  // I add eventListener when someone clicks a marker 
+  markerOne.addListener('click', function(){
+    infos.innerHTML = 'It"s a marker positioned at uluru';
+  
+  })
+
+  markerTwo.addListener('click', function(){
+    infos.innerHTML = 'It"s a marker positioned at coordinate 2';
+  
+  
+  })
+
+  markerThree.addListener('click', function(){
+    infos.innerHTML = 'It"s a marker positioned at  coordinate 3 ';
+   
+  
+  })
+  // It's a mthod which points position of Sydney a make a zoom of 10 
+  document.getElementById('center-map').addEventListener('click', function(event){
+    event.preventDefault();
+    
+    map.panTo(sydney);
+    map.setZoom(10);
+  });
+
+
+
+
+}
+
+
+
 
  
 
 
 
 
-  }
-
-
-
-  // MARKING NO A MAP 
-  var infos = document.getElementById('infos');
-*/
 
 
 

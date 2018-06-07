@@ -105,23 +105,27 @@
     <script src="vendor/hash.js"></script>
     <script src="js/script.js"></script>
 
-    <!-- it's place where the  google map is implemented
+<!-- // it's place where the  google map is implemented -->
     <div class="wrapper">
             <h3>My Google Maps Demo</h3>
+            <p>
+                <button id="center-map">Center map</button>
+                <button id="center-smooth">Center smoothly</button>
+            </p>
             <p id="infos"></p>
            
             <div id="map"></div>
             
-            <!--Load the API from the specified URL
+           <!-- Load the API from the specified URL
             * The async attribute allows the browser to render the page while the API loads
             * The key parameter will contain your own API key (which is not needed for this tutorial)
             * The callback parameter executes the initMap() function
-           
+           -->
             <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQAUt6YCu-B3mezy_hs32PsiaIiwz2ax4&callback=initMap">
             </script>
       </div>
-    -->
+   
    
 
 </body>
