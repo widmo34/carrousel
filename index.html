@@ -41,20 +41,12 @@
     </div>
    
 
-    <div class="wrapper below">
-        <p>
-            <a href="#carousel-cell1">paris </a>
-            <a href="#carousel-cell2">new york  </a>
-            <a href="#carousel-cell3">london </a>
-            <a href="#carousel-cell4">tokyo </a>
-            <a href="#carousel-cell5">moscow </a>
-            </p>
-    </div>
 
     <script>
     
         var cities = [
             {
+                coords: {lat: 48.862152, lng: 2.347354},
                 cell: 'carousel-cell first',
                 id: 'carousel-cell1',
                 image: '/images/1.jpeg',
@@ -63,6 +55,7 @@
                 tags: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             },
             {
+                coords: {lat: 40.711724 , lng: -74.012672}, 
                 cell: 'carousel-cell',
                 id: 'carousel-cell2',
                 image: '/images/2.jpeg',
@@ -71,6 +64,7 @@
                 tags: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             },
             {
+                coords: {lat: 51.521296, lng: -0.129071}, 
                 cell: 'carousel-cell',
                 id: 'carousel-cell3',
                 image: '/images/3.jpeg',
@@ -79,6 +73,7 @@
                 tags: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             },
             {
+                coords: {lat:  35.752987, lng: 139.200202}, 
                 cell: 'carousel-cell',
                 id: 'carousel-cell4',
                 image: '/images/4.jpeg',
@@ -87,6 +82,7 @@
                 tags: '<p>Lorem ipsum.</p> <img src="http://via.placeholder.com/400x200" alt="Photo placeholder"> <p>Dolor sit.</p>'
             },
             {
+                coords: {lat: 55.805214 , lng: 37.618895 }, 
                 cell: 'carousel-cell',
                 id: 'carousel-cell5',
                 image: '/images/5.jpeg',
@@ -107,24 +103,16 @@
 
 <!-- // it's place where the  google map is implemented -->
     <div class="wrapper">
-            <h3>My Google Maps Demo</h3>
-            <p>
-                <button id="center-map">Center map</button>
-                <button id="center-smooth">Center smoothly</button>
-            </p>
-            <p id="infos"></p>
-           
-            <div id="map"></div>
-            
-           <!-- Load the API from the specified URL
-            * The async attribute allows the browser to render the page while the API loads
-            * The key parameter will contain your own API key (which is not needed for this tutorial)
-            * The callback parameter executes the initMap() function
-           -->
+        <div id="map"></div>
+        <!-- Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
             <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQAUt6YCu-B3mezy_hs32PsiaIiwz2ax4&callback=initMap">
             </script>
-      </div>
+    </div>
    
    
 
