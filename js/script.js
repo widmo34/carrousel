@@ -36,16 +36,13 @@ button.addEventListener('click', function(){
       f.select(1);
  })
 
- flkty.once( 'eventName', function() {
-  console.log('eventName happened just once');
-});
 
 
 
 
 
 
-
+// progreBar which using a scroll event 
 var progressBar = document.querySelector('.progress-bar')
 
 f.on( 'scroll', function( progress ) {
@@ -54,6 +51,10 @@ f.on( 'scroll', function( progress ) {
  
 });
 
+// here I use a change eveny to center and zoom a map 
+flkty.on( 'change', function( index ) {
+  
+});
 
 
 
@@ -70,16 +71,6 @@ var map = new google.maps.Map(
     position: newCoords,
     map: map
   });
-
- var marker = [];
-
-  for(var i = 0; i < cities.length; i++){
-      marker = new google.maps.Marker({
-      position: cities[i].coords,
-      map: map
-      });
-}
-
   
 // this code moves a map depending on what slide is on screen 
 flkty.on( 'change', function( index ) {
@@ -99,6 +90,37 @@ flkty.on( 'change', function( index ) {
   
   
   });
+
+  // I create an array with markers here 
+var marker = [];
+
+for(var i = 0; i < cities.length; i++){
+   marker.push(new google.maps.Marker({
+    position: cities[i].coords,
+    map: map  })
+   )
+}
+
+marker[0].addListener('click', function(){
+ f.select(0)
+});
+
+marker[1].addListener('click', function(){
+  f.select(2)
+ });
+
+ marker[2].addListener('click', function(){
+  f.select(3)
+ });
+
+ marker[3].addListener('click', function(){
+  f.select(4)
+ });
+
+ marker[4].addListener('click', function(){
+  f.select(5)
+ });
+
  
 
 

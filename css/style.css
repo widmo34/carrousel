@@ -1,37 +1,27 @@
 a {
-  text-decoration: none;
-}
-
-a visited {
-  color: white;
-}
-
-a hover {
-  color: width;
-}
+  text-decoration: none; }
+  a visited {
+    color: white; }
+  a hover {
+    color: width; }
 
 body {
-  background-color: #99c5ef;
-}
+  background-color: #99c5ef; }
 
 .wrapper {
   width: 800px;
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  text-align: center;
-}
-
-.wrapper h1 {
-  text-align: center;
-}
+  text-align: center; }
+  .wrapper h1 {
+    text-align: center; }
 
 .carousel-cell {
   width: 100%;
   height: 50vh;
   margin-right: 10px;
-  background-size: cover;
-}
+  background-size: cover; }
 
 .containner {
   width: 600px;
@@ -39,28 +29,21 @@ body {
   font-size: 24px;
   margin: 0 auto;
   border-radius: 5%;
-  background: rgba(66, 138, 220, 0.6);
-}
-
-.containner h1 {
-  color: #ffffff;
-  margin-top: 20vh;
-}
+  background: rgba(66, 138, 220, 0.6); }
+  .containner h1 {
+    color: #ffffff;
+    margin-top: 20vh; }
 
 .flickity-page-dots .dot {
   height: 4px;
   width: 40px;
   margin: 0;
-  border-radius: 0;
-}
+  border-radius: 0; }
 
 .below {
-  margin-top: 50px;
-}
-
-.below p {
-  text-align: center;
-}
+  margin-top: 50px; }
+  .below p {
+    text-align: center; }
 
 .btn {
   position: absolute;
@@ -72,28 +55,23 @@ body {
   background: rgba(66, 138, 220, 0.6);
   border: 0;
   color: white;
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 .progress-bar {
   height: 20px;
   width: 0;
-  background: rgba(11, 52, 99, 0.6);
-}
+  background: rgba(11, 52, 99, 0.6); }
 
 #map {
   width: 800px;
   height: 400px;
   margin: 0 auto;
   box-shadow: 4px 5px 5px 5px #5fa1de;
-  margin-bottom: 20px;
-}
+  margin-bottom: 20px; }
 
 #infos {
   width: 200px;
   height: 50px;
   border: 1px solid black;
   margin: 10px auto;
-  border-radius: 15px;
-}
-/*# sourceMappingURL=style.css.map */
+  border-radius: 15px; }
